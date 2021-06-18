@@ -1,0 +1,2372 @@
+/* nor */
+
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+div {
+    display: block;
+}
+
+/* lib */
+
+:root {
+    --site-width: 1280px;
+}
+
+.container {
+    max-width: var(--site-width);
+    margin: 0 auto;
+}
+
+@media(max-width : 1320px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+#wrap,
+header,
+.section {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.05em;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+/* cus */
+
+/* 탑서비스 */
+
+.top-service {
+    background-color: #003964;
+    height: 40px;
+}
+
+.top-service .container {}
+
+.top-service ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.top-service ul li {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+
+.top-service ul li a {
+    display: block;
+    padding: 0 30px;
+}
+
+.top-service ul li a::after {
+    position: absolute;
+    top: 0;
+    right: -11px;
+    width: 11px;
+    height: 40px;
+    background: url(https://www.science.go.kr/resources/images/mps/layout/shape_bg.png) no-repeat;
+    content: "";
+    opacity: 0;
+}
+
+.top-service ul li:hover a::after {
+    opacity: 1;
+}
+
+.top-service ul li:hover > a {
+    background-color: #fff;
+    color: #003964;
+    transition: all .3s, opacity .35s;
+}
+
+/* 탑서비스 끝 */
+
+/* 헤더 */
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* 로고 */
+
+.logo-wrap {
+    display: flex;
+    min-height: 90px;
+    padding: 25px 0;
+}
+
+.logo-wrap a {
+    padding-left: 22px;
+}
+
+.logo-wrap a:first-child {
+    padding-left: 0;
+}
+
+.logo-wrap .logo {
+    height: 50px;
+    width: 210px;
+    background: url(https://www.science.go.kr/resources/images/mps/layout/logo.svg) no-repeat;
+}
+
+.logo-wrap .ikorea {
+    padding-top: 5px;
+}
+
+.logo-wrap .brand_logo {
+    width: 104px;
+    min-height: 50px;
+    background: url(https://www.science.go.kr/resources/images/mps/layout/brand_logo.svg) no-repeat;
+}
+
+/* 로고 끝 */
+
+/* 사이드메뉴 */
+
+.util {
+    width: 100%;
+}
+
+.util .sidemenu {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* sns */
+
+.util .sidemenu .sns {
+    padding-top: 10px;
+    height: 100%;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.util .sidemenu .sns a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(https://www.science.go.kr/resources/images/mps/layout/icon_sns.png) no-repeat 0 0;
+}
+
+.util .sidemenu .sns .facebook {}
+
+.util .sidemenu .sns .instagram {
+    background-position: -25px 0;
+}
+
+.util .sidemenu .sns .naver {
+    background-position: -80px 0;
+}
+
+.util .sidemenu .sns .youtube {
+    background-position: -107px 0;
+}
+
+/* sns 끝 */
+
+.util .sidemenu > ul {
+    padding-top: 4px;
+    padding-right: 20px;
+}
+
+.util .sidemenu > ul li {
+    background-color: #f9415e;
+    color: white;
+    text-align: center;
+}
+
+
+.util .sidemenu > ul li a {
+    display: block;
+    min-width: 110px;
+    padding: 8px 10px;
+    height: 40px;
+}
+
+
+.sidemenu .lang {
+    width: 160px;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 3px;
+}
+
+.sidemenu .lang .btn_lang {
+    background: url(https://www.science.go.kr/resources/images/mps/layout/ico_lang.png) 16px 50% no-repeat;
+    background-size: 20px;
+}
+
+.sidemenu .lang a,
+.sidemenu .lang .btn_lang {
+    z-index: 2;
+    display: block;
+    height: 43px;
+    line-height: 40px;
+    padding: 0 22px 0 42px;
+    font-size: 13px;
+    position: relative;
+    border: 1px solid #d7d7d7;
+}
+
+.sidemenu .lang .btn_lang::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 7px;
+    border-left: 4px solid transparent;
+    border-top: 4px solid #666;
+    border-right: 4px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+
+.sidemenu .lang ul {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    padding: 2px 0 0 0;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.sidemenu .lang ul li {}
+
+.sidemenu .lang ul li > a {}
+
+
+/* 사이드메뉴 끝 */
+
+/* 헤더 끝 */
+
+/* 메뉴 */
+
+nav.menu {
+    position: relative;
+    line-height: 1.3;
+    color: #464646;
+    position: relative;
+}
+
+nav ul#gnb {
+    padding-right: 110px;
+    text-align: center;
+}
+
+nav ul#gnb > li {
+    position: relative;
+    display: inline-block;
+    margin: 0 3.5%;
+    letter-spacing: -0.5px;
+}
+
+nav ul#gnb > li > a {
+    font-family: 'Square';
+    position: relative;
+    display: block;
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 19px;
+
+}
+
+nav ul#gnb > li > a.active::before,
+#gnb > li > a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #f9415e;
+    border-radius: 100%;
+    transition: all 0.5s;
+    opacity: 0;
+    content: "";
+}
+
+nav ul#gnb > li:hover > a.active::before,
+#gnb > li:hover > a::before,
+#gnb > li:hover > a::before {
+    left: 50%;
+    opacity: 1;
+}
+
+nav ul#gnb li .submenu {
+    position: absolute;
+    width: 220px;
+    left: 70%;
+    text-align: left;
+    transform: translateX(-50%);
+    transition: all .25s ease;
+    z-index: -95;
+    padding: 17px 0px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+nav ul#gnb li:hover .submenu {
+    z-index: 95;
+}
+
+nav ul#gnb li .submenu li {
+    font-size: 13px;
+}
+
+nav ul#gnb li .submenu li a {
+    display: block;
+    transition: all .3s ease;
+    padding: 5px 18px;
+    width: 100%;
+}
+
+.menu ul#gnb li:hover > .menu-bg {
+    display: block;
+}
+
+.menu > button {}
+
+.menu button:hover {
+    cursor: pointer;
+}
+
+.menu .search {
+    position: absolute;
+    top: 0;
+    right: 375px;
+    width: 55px;
+    height: 55px;
+    background-color: #295cb0;
+    border: none;
+}
+
+.menu .allmenu-open {
+    position: absolute;
+    top: 0;
+    right: 320px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    background-color: #2e3c4b;
+}
+
+.menu .allmenu-open span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transition: all .2s ease;
+}
+
+.menu .allmenu-open span.bar1 {
+    margin: 0 auto;
+}
+
+.menu .allmenu-open span.bar2 {
+    margin: 6px auto;
+}
+
+.menu .allmenu-open span.bar3 {
+    margin: 0 auto;
+}
+
+
+/* 메뉴 끝 */
+
+/* body */
+
+.con {
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+/* con1 */
+
+.mcon1 {
+    position: relative;
+    width: 100%;
+    height: 640px;
+    background: url(https://www.science.go.kr/resources/images/mps/main/main_visual.jpg) center center / cover no-repeat;
+    box-sizing: border-box;
+}
+
+.inner {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main_left {
+    padding: 20px 0;
+    float: left;
+    width: 620px;
+    position: relative;
+}
+
+.main_left a:hover {
+    text-decoration: underline;
+}
+
+.main_left .bbs {
+    position: relative;
+    padding: 40px;
+    height: 325px;
+    background-color: rgba(61, 66, 104, .8);
+}
+
+.main_left .bbs > ul {
+    position: relative;
+}
+
+.main_left .bbs > ul > li {
+    float: left;
+    margin-right: 40px;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.main_left .bbs ul li h2 {}
+
+.main_left .bbs ul li.on h2 {
+    text-decoration: none;
+}
+
+.main_left .bbs ul li h2 a {
+    position: relative;
+    display: block;
+    height: 100%;
+    text-align: left;
+    font-size: 24px;
+    transition: 0.3s;
+    font-weight: bold;
+    color: #b7bac8;
+}
+
+.main_left .bbs ul li h2 > a {
+    font-family: Square;
+}
+
+.main_left .bbs ul li.on h2 > a {
+    color: #fff;
+    display: block;
+}
+
+.main_left .bbs ul li h2::after {
+    content: "";
+    display: block;
+    clear: both;
+    position: relative;
+    top: -46px;
+    height: 8px;
+    width: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: 0.3s;
+    display: none;
+}
+
+.main_left .bbs ul li.on h2::after {
+    z-index: 1;
+    margin-left: 45%;
+    display: block;
+}
+
+.main_left .bbs ul li ul .on ul {
+    display: block;
+}
+
+.main_left .bbs ul li ul {
+    z-index: 5;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.main_left .bbs ul li ul li {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #6a708d;
+    display: none;
+}
+
+.main_left .bbs ul li.on ul li {
+    display: block;
+}
+
+.main_left .bbs ul li ul li a {
+    float: left;
+    width: 100%;
+    padding: 0 120px 0 0;
+    line-height: 32px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.main_left .bbs ul li ul li .tit {
+    float: left;
+    max-width: 99%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: -1px;
+    font-weight: 300;
+}
+
+.main_left .bbs ul li ul li .date {
+    float: right;
+    margin: 0 -120px 0 0;
+    color: #b0b0b9;
+}
+
+.main_left .bbs ul li ul li.first {
+    height: 107px;
+    padding: 0;
+    border: none;
+}
+
+.main_left .bbs ul li ul li.first a {
+    display: block;
+    padding: 0 20px 0 0;
+    height: 100%;
+    position: relative;
+}
+
+.main_left .bbs ul li ul li.first .tit {
+    padding: 0 0 0 85px;
+    font-size: 20px;
+}
+
+.main_left .bbs ul li ul li.first a em {
+    margin: 12px 0 0 0;
+    padding: 0 0 0 85px;
+    overflow: hidden;
+    height: 3rem;
+    line-height: 1.5rem;
+    font-size: 15px;
+    font-weight: 200;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    clear: both;
+}
+
+.main_left .bbs ul li ul li.first a .date_w {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.main_left .bbs ul li ul li.first a .date_w strong {
+    display: block;
+    font-size: 65px;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.main_left .bbs ul li ul li.first a .date {
+    display: none;
+}
+
+.main_left .bbs .more {
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+}
+
+.main_left .bbs .on .more {
+    display: block;
+}
+
+.main_left .bbs .more::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_left .bbs .more::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    ;
+    width: 23px;
+    height: 2px;
+}
+
+.more::before,
+.more::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 23px;
+    background: #fff;
+}
+
+.main_left .bbs .more:hover {
+    transform: rotate(180deg);
+    transition: all 1s;
+}
+
+.main_left .bbs ul li.list2 {}
+
+.main_left .bbs ul li.list3 {}
+
+.main_left .lookup {
+    height: 55px;
+}
+
+.main_left .lookup ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main_left .lookup ul li {
+    float: left;
+    display: table;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: #1f7eae;
+}
+
+.main_left .lookup ul li a {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #fff;
+}
+
+.main_left .lookup li + li {
+    background: #d7601f;
+}
+
+.main_left .smart {
+    position: relative;
+    margin: 20px 0 0 0;
+    height: 200px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.main_left .smart > ul {
+    height: 100%;
+}
+
+.main_left .smart ul li {
+    float: left;
+    width: 33.3%;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+}
+
+.main_left .smart ul li a {
+    position: relative;
+    display: block;
+    line-height: 120%;
+    padding: 60px 0 0 0;
+    text-align: center;
+}
+
+.main_left .smart ul li a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50px;
+    height: 60px;
+    margin: 0 0 0 -24px;
+    background: url(https://www.science.go.kr/resources/images/mps/main/mcon1_ico8.png) no-repeat 0 12px;
+    transition: 0.7s;
+}
+
+.main_left .smart ul .link2 a::before {
+    width: 51px;
+    margin: 0 0 0 -24px;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/mcon1_ico2.png);
+}
+
+.main_left .smart ul .link3 a::before {
+    width: 50px;
+    margin: 0 0 0 -24px;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/mcon1_ico1.png);
+}
+
+.main_left .smart ul .link4 a::before {
+    width: 45px;
+    margin: 0 0 0 -24px;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/mcon1_ico4.png);
+}
+
+.main_left .smart ul .link5 a::before {
+    width: 51px;
+    margin: 0 0 0 -24px;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/mcon1_ico5.png);
+}
+
+.main_left .smart ul .link6 a::before {
+    width: 40px;
+    margin: 0 0 0 -24px;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/mcon1_ico6.png);
+}
+
+.main_left .smart ul li:hover a::before {
+    transform: rotateY(360deg);
+    transition: all 1s;
+}
+
+/* main_right */
+
+.main_right {
+    width: 625px;
+    position: relative;
+    float: right;
+    padding-top: 20px;
+}
+
+.main_right::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.main_right .mySwiper01 {
+    height: 600px;
+}
+
+.mcon1 .main_right .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.mcon1 .main_right .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mcon1 .main_right .swiper-slide a {}
+
+.mcon1 .main_right .swiper-slide a img {
+    display: block;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.mcon1 .swiper-button-next {}
+
+.mcon1 .swiper-button-prev {}
+
+.mcon1 .swiper-pagination {
+    position: absolute;
+    top: 525px;
+}
+
+.mcon1 .swiper-pagination > span {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+}
+
+/* con1 끝 */
+
+/* con2 */
+
+.mcon2 {
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+    height: 430px;
+}
+
+.mcon2 .inner {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.hgroup {
+    text-align: center;
+    margin: 0 0 35px 0;
+}
+
+.mcon2 .inner .hgroup h2 {
+    font-size: 40px;
+}
+
+.mcon2 .inner .hgroup p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.mcon2 .inner ul {}
+
+.mcon2 .inner ul li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #eee;
+    overflow: hidden;
+}
+
+.mcon2 .inner ul li + li {
+    margin: 0 0 0 70px;
+}
+
+.mcon2 .inner ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    color: #fff;
+    padding: 120px 0 45px 0;
+    text-align: center;
+    background: url(https://www.science.go.kr/resources/images/mps/main/mcon2_bg1.png) center center / cover no-repeat;
+    box-sizing: border-box;
+}
+
+.mcon2 .inner ul .link2 a {
+    background: url(https://www.science.go.kr/resources/images/mps/main/mcon2_bg2.png);
+}
+
+.mcon2 .inner ul .link3 a {
+    background: url(https://www.science.go.kr/resources/images/mps/main/mcon2_bg3.png);
+}
+
+.mcon2 .inner ul .link4 a {
+    background: url(https://www.science.go.kr/resources/images/mps/main/mcon2_bg4.png);
+}
+
+.mcon2 .inner ul .link5 a {
+    background: url(https://www.science.go.kr/resources/images/mps/main/mcon2_bg5.png);
+}
+
+.mcon2 .inner ul li a span {
+    position: relative;
+    z-index: 1;
+}
+
+.mcon2 li a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    background: #1d7ab3;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.mcon2 .inner ul li:hover a::before {
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.mcon2 .inner ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 120px;
+    height: 105px;
+    margin: 0 0 0 -31px;
+    background: url(https://www.science.go.kr/resources/images/mps/main/mcon2_ico1.png) no-repeat 0 40px;
+    transition: 0.7s;
+}
+
+.mcon2 .inner ul .link2 a::after {
+    width: 79px;
+    margin: 0 0 0 -39px;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/mcon2_ico2.png);
+}
+
+.mcon2 .inner ul .link3 a::after {
+    width: 53px;
+    margin: 0 0 0 -26px;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/mcon2_ico3.png);
+}
+
+.mcon2 .inner ul .link4 a::after {
+    width: 52px;
+    margin: 0 0 0 -26px;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/mcon2_ico4.png);
+}
+
+.mcon2 .inner ul .link5 a::after {
+    width: 120px;
+    margin: 0 0 0 -60px;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/mcon2_ico5.png);
+}
+
+/* con2 끝 */
+
+/* con3 */
+
+.mcon3 {
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+    height: 710px;
+    background: #dedee4 url(https://www.science.go.kr/resources/images/mps/main/mcon4_bg.png) top center / cover no-repeat;
+}
+
+.mcon3 .hgroup {
+    text-align: center;
+    margin: 0 0 35px 0;
+}
+
+.mcon3 .hgroup h2 {
+    font-size: 40px;
+    font-family: Square;
+    font-weight: bold;
+    color: #fff;
+}
+
+.mcon3 .card {
+    position: relative;
+    width: 100%;
+    margin: 0 0 0 0px;
+    font-family: 'Square';
+}
+
+.mcon3 .mySwiper02 {
+    position: relative;
+    z-index: 0;
+}
+
+.mcon3 .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.mcon3 mySwiper02 .swiper-wrapper {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mcon3 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 433px;
+}
+
+.mcon3 .swiper-slide span {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    left: 30px;
+    bottom: 30px;
+    padding: 0 10px;
+    min-width: 123px;
+    height: 37px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 37px;
+    background: #000;
+    border-radius: 18.5px;
+}
+
+.mcon3 .swiper-slide {
+    overflow: hidden;
+}
+
+.mcon3 .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.mcon3 .swiper-slide:hover a {
+    transform: scale(1.1, 1.1);
+    transition: all .3s;
+}
+
+
+.mcon3 .swiper-slide .slider01 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg8.png);
+    background-size: cover;
+}
+
+.mcon3 .swiper-slide .slider02 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg9.png);
+    background-size: cover;
+}
+
+.mcon3 .swiper-slide .slider03 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg1.png);
+    background-size: cover;
+}
+
+.mcon3 .swiper-slide .slider04 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg7.png);
+    background-size: cover;
+}
+
+.mcon3 .swiper-slide .slider05 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg10.png);
+    background-size: cover;
+}
+
+.mcon3 .swiper-slide .slider06 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg2.png);
+    background-size: cover;
+}
+
+.mcon3 .swiper-slide .slider07 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg3.png);
+    background-size: cover;
+}
+
+.mcon3 .swiper-slide .slider08 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg4.png);
+    background-size: cover;
+}
+
+.mcon3 .swiper-slide .slider09 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg5.png);
+    background-size: cover;
+}
+
+.mcon3 .swiper-slide .slider10 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg6.png);
+    background-size: cover;
+}
+
+.mcon3 .mySwiper02 > .button-next {
+    position: absolute;
+    z-index: 2;
+    width: 68px;
+    height: 68px;
+    border-radius: 34px;
+    background: #fff;
+    display: block;
+    top: 50%;
+    right: 90px;
+    margin-top: -45px;
+}
+
+.mcon3 .mySwiper02 > .button-prev {
+    position: absolute;
+    z-index: 2;
+    width: 68px;
+    height: 68px;
+    border-radius: 34px;
+    background: #fff;
+    top: 50%;
+    left: 90px;
+    margin-top: -45px;
+    display: block;
+}
+
+.mcon3 .mySwiper02 > .button-prev:hover {
+    cursor: pointer;
+    background: gold;
+}
+
+.mcon3 .mySwiper02 > .button-next:hover {
+    cursor: pointer;
+    background: gold;
+}
+
+.mcon3 .mySwiper02 .button-prev::before {
+    transform: rotate(45deg);
+    content: '';
+    display: block;
+    margin: 25px 26px 0;
+    width: 1px;
+    height: 10px;
+    background: #333;
+}
+
+.mcon3 .mySwiper02 .button-prev::after {
+    transform: rotate(90deg);
+    content: '';
+    display: block;
+    margin: -12px 34px 0;
+    width: 1px;
+    height: 20px;
+    background: #333;
+}
+
+.mcon3 .mySwiper02 .button-next::before {
+    transform: rotate(-45deg);
+    content: '';
+    display: block;
+    margin: 25px 42px 0;
+    width: 1px;
+    height: 10px;
+    background: #333;
+}
+
+.mcon3 .mySwiper02 .button-next::after {
+    transform: rotate(90deg);
+    content: '';
+    display: block;
+    margin: -12px 34px 0;
+    width: 1px;
+    height: 20px;
+    background: #333;
+}
+
+/* con3 끝 */
+
+/* con4 */
+
+.mcon4 {
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+height: 814px;
+    background: #dedee4 url(https://www.science.go.kr/resources/images/mps/main/mcon3_bg.png) center center no-repeat;
+    overflow: hidden;
+}
+
+.mcon4 .hgroup {
+    text-align: center;
+    margin: 0 0 35px 0;
+}
+
+.mcon4 .hgroup h2 {
+    font-size: 40px;
+    font-family: Square;
+    font-weight: bold;
+}
+
+.mcon4 .hgroup p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+}
+
+.mcon4 .inner .tab {}
+
+.mcon4 .tab > li {
+    display: inline-block;
+    width: 15.83%;
+    height: 60px;
+    border: 1px solid #d6d6d6;
+    background: #fff;
+    margin-left: 420px;
+}
+
+.mcon4 .tab > li + li {
+    margin: 0 0 0 1%;
+}
+
+.mcon4 .tab > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 0 0;
+    font-size: 22px;
+    line-height: 40px;
+    font-family: Square;
+    text-align: center;
+}
+
+.mcon4 .tab li.on {}
+
+.mcon4 .tab li.on > a {
+    background: #003964;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #003964;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.mcon4 .tab li > a:hover {
+    background: #003964;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #003964;
+    transition: 0.3s;
+}
+
+.mcon4 .skip {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+.edu_wrap {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+}
+
+.edu_group_wrap {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    
+}
+
+.mcon4 .slick-prev {
+    top: 50%;
+    margin-top: -45px;
+    left: -80px;
+}
+
+.mcon4 .slick-next {
+    top: 50%;
+    margin-top: -45px;
+    right: -110px;
+}
+
+.mcon4 .slick-prev::before ,
+.mcon4 .slick-next::after {
+    transform: rotate(45deg);
+}
+
+.mcon4 .slick-prev::after,
+.mcon4 .slick-next::before{
+    transform: rotate(-45deg);
+}
+
+.mcon4 .slick-prev,
+.mcon4 .slick-next {
+    position: absolute;
+    z-index: 2;
+    width: 70px;
+    height: 90px;
+    background: #003964;
+    text-indent: -999px;
+    font-size: 0;
+}
+
+.mcon4 .slick-prev::before,
+.mcon4 .slick-next::before {
+    content: "";
+    display: block;
+    margin: 0px 28px 0;
+    width: 3px;
+    height: 42px;
+    background: #fff;
+}
+
+.mcon4 .slick-prev::after,
+.mcon4 .slick-next::after {
+    content: "";
+    display: block;
+    margin: -14px 28px 0;
+    width: 3px;
+    height: 42px;
+    background: #fff;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slick-slide  {
+    box-sizing: border-box;
+}
+
+.mcon4 .edu_slide .slick-list {
+    width: 1280px;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.mcon4 .edu_slide .slick-list .slick-center > .g_item01 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg01.png) center center / cover no-repeat;
+}
+
+.mcon4 .edu_slide .slick-list .slick-track .g_item02 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg02.png) center center / cover no-repeat;
+}
+
+.mcon4 .edu_slide .slick-list .slick-track .g_item03 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg03.png) center center / cover no-repeat;
+}
+
+.mcon4 .edu_slide .slick-list .slick-track .g_item04 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg04.png) center center / cover no-repeat;
+}
+
+.mcon4 .edu_slide .slick-list .slick-track .g_item05 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg05.png) center center / cover no-repeat;
+}
+
+.mcon4 .edu_slide .slick-list .slick-track .g_item06 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg06.png) center center / cover no-repeat;
+}
+
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.mcon4 .edu_slide li {
+    position: relative;
+    display: inline-block;
+    height: 383px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.mcon4 .edu_slide .edu_thm {
+    margin: 36px auto 0;
+    width: 100px; 
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: url(https://www.science.go.kr/resources/images/mps/main/edu_thm1.png) center center / cover no-repeat;
+}
+
+.mcon4 .edu_slide .edu_in {
+    margin: 50px 50px 0;
+    display: block;
+    height: 100%;
+    background: #3d6ab6;
+    border: 1px solid #003964;
+}
+
+.mcon4 .edu_slide .edu_per {
+    margin: 13px 0 0 0;
+}
+
+.mcon4 .edu_slide .edu_per span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.mcon4 .edu_slide .edu_per span.one {
+    background: url(https://www.science.go.kr/resources/images/mps/main/edu_ico.png) center center no-repeat;
+}
+
+.skip {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999px;
+}
+
+address,
+em {
+    font-style: normal;
+}
+
+.mcon4 .edu_slide .edu_class {
+    display: inline-block;
+    padding: 3px 0 0 0;
+    font-size: 18px;
+    font-family: Square;
+}
+
+.mcon4 .edu_slide .tt {
+    margin: -5px 0 5px 0;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Square;
+}
+
+.mcon4 .edu_slide .edu_con {
+    display: none;
+}
+
+.mcon4 .edu_slide .edu_con li {
+    display: table;
+    vertical-align: top;
+    margin: 0 0 8px 0;
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+.mcon4 .edu_slide > li {
+    position: relative;
+    display: inline-block;
+    height: 383px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.mcon4 .edu_slide .edu_con span {
+    display: table-cell;
+    width: 80px;
+    font-weight: 600;
+}
+
+.mcon4 .edu_slide .btn_box a {
+    display: block;
+    position: relative;
+    margin: 20px auto 0;
+    width: 215px;
+    height: 47px;
+    line-height: 47px;
+    font-size: 16px;
+    color: #fff;
+    background: #003964;
+}
+
+.mcon4 .edu_slide .btn_box span {
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
+}
+
+.mcon4 .edu_slide .btn_box span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 27px;
+    height: 7px;
+    top: 25px;
+    right: 0;
+    background: url(https://www.science.go.kr/resources/images/mps/main/arrow_01.png) center center no-repeat;
+    transition: all .3s;
+}
+
+/* con4 끝 */
+
+/* con5 */
+
+.mcon5 {
+    position: relative;
+    padding: 70px 0;
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+}
+
+.mcon5 .inner .main_left {
+    float: left;
+    width: 620px;
+    position: relative;
+}
+
+.mcon5 .inner .main_left .preview {
+    position: relative;
+}
+
+.mcon5 .inner .main_left .preview::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 186px;
+    height: 192px;
+    right: -30px;
+    bottom: -10px;
+    background: url(https://www.science.go.kr/resources/images/mps/main/preview_bg.png) center center / cover no-repeat;
+}
+
+.mcon5 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    font-family: Square;
+}
+
+.mcon5 .preview > div {
+    padding: 60px 50px;
+    height: 250px;
+    background: linear-gradient(to right, #1069aa, #0d3b69);
+}
+
+.mcon5 .preview div .pre_con {}
+
+.mcon5 .preview div .pre_con li {
+    position: relative;
+    display: table;
+    z-index: 1;
+    vertical-align: top;
+    margin: 0 0 25px 0;
+    width: 100%;
+    color: #fff;
+}
+
+.mcon5 .preview div .pre_con li span {
+    display: table-cell;
+    width: 120px;
+    font-weight: 600;
+}
+
+.mcon5 .assi {
+    position: relative;
+    margin: 20px 0 0 0;
+    height: 130px;
+}
+
+.mcon5 .assi a {
+    transition: color 0.25s;
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 31%;
+    height: 130px;
+    background: #f4f7fb;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid #d9dfe7;
+}
+
+.mcon5 .assi a + a {
+    margin: 0 0 0 3.5%;
+}
+
+.mcon5 .assi a::before {
+    top: 0;
+    left: 0;
+}
+
+.mcon5 .assi a::after {
+    right: 0;
+    bottom: 0;
+}
+
+.mcon5 .assi a::before,
+.mcon5 .assi a::after {
+    border: 4px solid transparent;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+}
+
+.mcon5 .assi a:hover {
+    border: 4px solid #0d3b69;
+}
+
+.mcon5 .inner .main_left .assi a h2 {
+    padding: 65px 20px 0;
+    color: #333;
+    line-height: 1.3em;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Noto;
+    word-break: keep-all;
+    animation: animate 1s linear forwards;
+}
+
+.mcon5 .inner .main_left .assi .think h2 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/assi_ico4.png) center 12px no-repeat;
+}
+
+.mcon5 .inner .main_left .assi .guide h2 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/assi_ico2.png) center 12px no-repeat;
+}
+
+.mcon5 .inner .main_left .assi .tour h2 {
+    background: url(https://www.science.go.kr/resources/images/mps/main/assi_ico5.png) center 12px no-repeat;
+}
+
+.mcon5 .notice {
+    height: 300px;
+}
+
+.mcon5 .notice h2 {}
+
+.mcon5 .notice .control {
+    z-index: 55;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.mcon5 .notice .control a {
+    position: relative;
+    float: left;
+    width: 23px;
+    height: 23px;
+    margin: 0 2px 0 0;
+    background: #fff;
+}
+
+.mcon5 .notice .control .prev {
+    left: 0;
+}
+
+.mcon5 .notice .control .stop {}
+
+.mcon5 .notice .control .next {}
+
+
+.mcon5 .notice .control .prev:before {
+    transform: rotate(45deg);
+}
+
+.mcon5 .notice .control .prev:after {
+    transform: rotate(-45deg);
+}
+
+.mcon5 .notice .control .prev:before,
+.mcon5 .notice .control .next:before {
+    content: '';
+    display: block;
+    margin: 0 0 0 5px;
+    width: 1px;
+    height: 14px;
+    background: #000;
+}
+
+.mcon5 .notice .control .prev:after,
+.mcon5 .notice .control .next:after {
+    content: '';
+    display: block;
+    margin: -5px 0 0 5px;
+    width: 1px;
+    height: 14px;
+    background: #000;
+}
+
+.mcon5 .notice .control .stop:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #000;
+    left: 8px;
+}
+
+.mcon5 .notice .control .stop:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #000;
+    right: 8px;
+}
+
+.mcon5 .notice .control .next:before {
+    margin: 0 0 0 16px;
+    transform: rotate(-45deg);
+}
+
+.mcon5 .notice .control .next:after {
+    margin: -5px 0 0 16px;
+    transform: rotate(45deg);
+}
+
+.mcon5 .notice .slide {
+    width: 620px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.mcon5 .notice .slide > .slider {
+    position: relative;
+}
+
+.mcon5 .notice .slide > .slider p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.mcon5 .notice .slide > .slider p img {}
+
+.mcon5 .notice .slide > .slider p:first-child {
+    left: 0;
+}
+
+.mcon5 .notice .slide > .slider p:nth-child(2) {
+    left: 620px;
+}
+
+.mcon5 .notice .slide > .slider p:nth-child(3) {
+    left: 1240px;
+}
+
+.mcon5 .webzine {
+    position: relative;
+    margin: 20px 0 0 0;
+    padding: 25px 30px;
+    height: 130px;
+    background: #f4f7fb;
+    border: 1px solid #f4f7fb;
+}
+
+.mcon5 .webzine h2 {
+    display: inline-block;
+    margin: 0 0 2px 0;
+    color: #ea546c;
+    font-size: 24px;
+}
+
+.mcon5 .webzine span {
+    display: inline-block;
+    padding: 0 0 0 5px;
+    font-size: 16px;
+    margin-bottom: -5px;
+    color: #333;
+}
+
+.mcon5 .webzine .detail {
+    display: none;
+}
+
+.mcon5 .webzine div {}
+
+.mcon5 .webzine div label {}
+
+.skip {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999px;
+}
+
+.mcon5 .webzine input[type="text"] {
+    float: left;
+    width: 55%;
+    background: #fff;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+    height: 40px;
+    padding: 8px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+.mcon5 .webzine button {
+    border: 0;
+    float: left;
+    width: 22%;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    background: #ea546c;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: visible;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.mcon5 .webzine button:hover {
+    background: red;
+    text-decoration: underline;
+}
+
+select,
+input,
+textarea {
+    background-color: transparent;
+    border: 1px solid #dae0e6;
+    color: #454545;
+    box-sizing: border-box;
+    transition: border-color .15s ease-in-out, background-color .15s ease-in-out;
+    -webkit-transition: border-color .15s ease-in-out, background-color .15s ease-in-out;
+    font-family: Noto, "맑은 고딕", Malgun Gothic, arial, helvetica, clean, sans-serif;
+    font-size: 16px;
+    ;
+    vertical-align: middle;
+}
+
+.mcon5 .webzine div #agreeFlag {}
+
+/* con5 끝 */
+
+/* con6 */
+
+.mcon6 {
+    position: relative;
+    padding: 50px 0;
+    overflow: hidden;
+    background: #f4f7fb;
+    box-sizing: border-box;
+}
+
+.mcon6 .hgroup h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+    font-family: Square;
+    font-weight: bold;
+}
+
+.mcon6 .hgroup h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: -85px;
+    width: 75px;
+    height: 48px;
+    background: url(https://www.science.go.kr/resources/images/mps/main/mcon6_ico.png) center center / contain no-repeat;
+}
+
+.mcon6 .hgroup p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.mcon6 .sns_ico {
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.mcon6 .sns_ico > li {
+    display: inline-block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #666;
+}
+
+.mcon6 .sns_ico > li + li {
+    margin: 0 0 0 20px;
+}
+
+.mcon6 .sns_ico > li a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: url(https://www.science.go.kr/resources/images/mps/main/sns_facebook.png) center center / contain no-repeat;
+}
+
+.mcon6 .sns_ico > li a.instar {
+    background: url(https://www.science.go.kr/resources/images/mps/main/sns_instar.png) center center / contain no-repeat;
+}
+
+.mcon6 .sns_ico > li a.youtube {
+    background: url(https://www.science.go.kr/resources/images/mps/main/sns_youtube.png) center center / contain no-repeat;
+}
+
+.mcon6 .sns_ico > li a.facebook {}
+
+.mcon6 .sns_ico > li a.blog {
+    background: url(https://www.science.go.kr/resources/images/mps/main/sns_blog.png) center center / contain no-repeat;
+}
+
+.mcon6 .sns_ico > li a::before {
+    content: '';
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    border-radius: 45px;
+    border: 4px solid #003668;
+    transition: 0.3s;
+}
+
+.mcon6 .sns_ico > li:hover a::before {
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.sns_wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sns_wrap .sns_list {
+    column-width: 400px;
+    column-gap: 20px;
+    padding: 20px 20px 70px 20px;
+}
+
+.sns_wrap .sns_more {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sns_wrap .sns_more span {
+    display: inline-block;
+    width: 120px;
+    height: 44px;
+    z-index: 1;
+    border: 2px solid #003964;
+    font-size: 18px;
+    line-height: 40px;
+    color: #003964;
+}
+
+/* con6 끝 */
+
+#body::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* body 끝 */
+
+/* 퀵메뉴 */
+
+.side_quick {
+    position: fixed;
+    top: 250px;
+    z-index: 60;
+    right: 0;
+    width: 120px;
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+}
+
+.side_quick.qmore {
+    display: block;
+}
+
+.side_quick.qmore .blind {
+    height: 70px;
+}
+
+.side_quick .blind {
+    overflow: hidden;
+    transition: 0.3s;
+    height: auto;
+}
+
+.side_quick.qmore .blind .tt {
+    background: #295cb0;
+    color: #fff;
+    transition: 0.3s;
+    position: relative;
+}
+
+.side_quick.qmore .blind:hover .tt {
+    cursor: pointer;
+}
+
+.side_quick li {
+    position: relative;
+    transition: 0.3s;
+}
+
+.side_quick .blind .tt {
+    padding: 12px 20px;
+    height: 70px;
+    border: none;
+    line-height: 1.2em;
+}
+
+.side_quick .blind .tt i {
+    display: inline-block;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 18px;
+    right: 10px;
+    background: #fff;
+    border-radius: 16px;
+    transition: 0.3s
+}
+
+.side_quick .blind .tt i::before {
+    transform: rotate(-45deg);
+    content: "";
+    display: block;
+    position: absolute;
+    margin: 10px 9px 0;
+    width: 3px;
+    height: 16px;
+    background: #295cb0;
+}
+
+.side_quick .blind .tt i::after {
+    transform: rotate(45deg);
+    content: "";
+    display: block;
+    position: absolute;
+    margin: -10px 19px 0;
+    width: 3px;
+    height: 16px;
+    background: #295cb0;
+}
+
+.side_quick.qmore .blind li:not(:first-child) {
+    display: none;
+}
+
+.side_quick li.sq1 {
+    border: none;
+}
+
+.side_quick li a {
+    display: block;
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    background: url(https://www.science.go.kr/resources/images/mps/main/ico_quick01.png) 79px center no-repeat;
+}
+
+.side_quick li.sq2 a {
+    background: url(https://www.science.go.kr/resources/images/mps/main/ico_quick03.png) 75px center no-repeat;
+}
+
+.side_quick li.sq3 a {
+    background: url(https://www.science.go.kr/resources/images/mps/main/ico_quick02.png) 77px center no-repeat;
+}
+
+.side_quick li.sq4 a {
+    background: url(https://www.science.go.kr/resources/images/mps/main/ico_quick04.png) 75px center no-repeat;
+}
+
+.side_quick li.sq5 a {
+    background: url(https://www.science.go.kr/resources/images/mps/main/ico_quick05.png) 75px center no-repeat;
+}
+
+.side_quick_top {
+    position: fixed;
+    top: 185px;
+    z-index: 60;
+    right: 0;
+    width: 120px;
+    height: 50px;
+    background: #103c85;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.side_quick_top a {
+    color: #fff;
+    line-height: 45px;
+}
+
+/* 퀵메뉴 끝 */
+
+hr {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* 푸터 */
+
+#footer {
+    position: relative;
+    padding-bottom: 35px;
+    background: #232b36;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#footer::before {
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    content: "";
+    z-index: -1;
+}
+
+#footer .container {
+    position: relative;
+}
+
+#footer .container .site-info {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #4f555e;
+}
+
+#footer .container .site-info .flogo {
+    display: block;
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+}
+
+#footer .container .site-info .flogo img {
+    border: none;
+}
+
+#footer .container .select-link {
+    float: right;
+    position: absolute;
+    width: 200px;
+    margin-top: 25px;
+    right: 0;
+    top: 0;
+}
+
+strong {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+#footer .container .select-link > .link-title {
+    display: block;
+    height: 35px;
+    line-height: 2.2;
+    font-size: 15px;
+}
+
+#footer .container .select-link > .link-title a {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 0 52px 0 20px;
+    border: 1px solid #95979a;
+    color: #fff;
+    font-weight: 100;
+}
+
+#footer .container .select-link > .link-title a i {
+    position: absolute;
+    right: 0;
+    padding: 0 18px;
+    line-height: 2.2;
+}
+
+#footer .container .select-link > .link-title a .xi-long-arrow-up {}
+
+#footer .container .select-link > .link-title a::after {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 51px;
+    width: 1px;
+    height: 11px;
+    background-color: #91959b;
+    content: "";
+}
+
+#footer .container .select-link > .link-site {
+    position: absolute;
+    bottom: 34px;
+    width: 100%;
+    height: 0;
+    padding: 20px;
+    background-color: #232b36;
+    border: 1px solid #95979a;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#footer .container .select-link > .link-site > li:first-child {
+    margin-top: 0;
+}
+
+#footer .container .select-link > .link-site > li {
+    margin-top: 6px;
+}
+
+#footer .container .select-link > .link-site > li a {
+    display: block;
+    color: #fff;
+}
+
+.fmenu-select {
+    padding-top: 20px;
+}
+
+.fmenu-select .fsidemenu {
+    float: left;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.fmenu-select .fsidemenu li {
+    position: relative;
+    float: left;
+}
+
+.fsidemenu .point {
+    color: #fff;
+}
+
+.fmenu-select .fsidemenu li a {
+    position: relative;
+    display: block;
+    margin-right: 20px;
+    padding-right: 20px;
+    color: #95979a;
+}
+
+.fsidemenu li a::after {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 1px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, 0.15);
+    content: "";
+}
+
+.fmenu-select::after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.float-wrap {
+    clear: both;
+    overflow: hidden;
+}
+
+.float-wrap .address {
+    float: left;
+    color: #95979a;
+    padding-top: 10px;
+}
+
+.copyright {
+    color: #95979a;
+}
+
+.quote-mark {
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+}
+
+.quote-mark .wa {
+    margin-right: 15px;
+}
+
+.quote-mark span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 푸터 끝 */
+
+/* 반응형 */
+

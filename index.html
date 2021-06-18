@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/common.js"></script>
 </head>
@@ -16,13 +20,15 @@
     <div id="wrap">
 
         <!--   탑서비스 -->
-        <div class="top-service container">
-            <ul>
-                <li><a href="#">국립중앙과학관 자료실</a></li>
-                <li><a href="#">전국과학관길라잡이</a></li>
-                <li><a href="#">과학학습 콘텐츠</a></li>
-                <li><a href="#">생물표본관</a></li>
-            </ul>
+        <div class="top-service">
+            <div class="container">
+                <ul>
+                    <li><a href="#">국립중앙과학관 자료실</a></li>
+                    <li><a href="#">전국과학관길라잡이</a></li>
+                    <li><a href="#">과학학습 콘텐츠</a></li>
+                    <li><a href="#">생물표본관(NARIS)</a></li>
+                </ul>
+            </div>
         </div>
         <!--   탑서비스 끝 -->
 
@@ -31,53 +37,1166 @@
 
             <div class="logo-wrap container">
 
-                <div class="logo">
-                    <a href="#"></a>
-                </div>
+                <!--                ----->
 
-                <div class="ikorea">
-                    <a href="#">
+                <a href="#">
+                    <div class="logo"></div>
+                </a>
+
+                <a href="#">
+                    <div class="ikorea">
                         <img src="img/ikorea_logo.gif" alt="">
-                    </a>
-                </div>
-
-                <div class="brand_logo">
-                    <a href="#">
-                        <img src="img/brand_logo.svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="util">
-
-                <nav class="sidemenu">
-
-                    <div class="sns">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
                     </div>
+                </a>
 
-                    <ul>
-                        <li>
-                            <a href="#">로그인</a>
-                        </li>
-                    </ul>
-                    
-                    <div class="lang web">
-                        <a href="#">LANGUAGE</a>
+                <a href="#">
+                    <div class="brand_logo"></div>
+                </a>
+
+                <!--                ----->
+
+                <div class="util">
+
+                    <nav class="sidemenu">
+
+                        <!--                        ----->
+
+                        <div class="sns">
+                            <a href="#" class="facebook"></a>
+                            <a href="#" class="instagram"></a>
+                            <a href="#" class="naver"></a>
+                            <a href="#" class="youtube"></a>
+                        </div>
+
+                        <!--                        ----->
+
                         <ul>
                             <li>
-                            <a href="#">ENGLISH</a>
+                                <a href="#">로그인</a>
                             </li>
                         </ul>
-                    </div>
-                </nav>
+
+                        <div class="lang web">
+                            <a href="#lang_list" class="btn_lang">LANGUAGE</a>
+                            <ul id="lang_list" style="display: none;">
+                                <li>
+                                    <a href="#">ENGLISH</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+
 
             </div>
+
         </header>
         <!--     헤더 끝 -->
+
+        <!--         메뉴 -->
+
+        <nav class="menu">
+            <ul id="gnb" class="container">
+                <li>
+                    <a href="#">전시관</a>
+                    <ul class="submenu">
+                        <li><a href="#">전시관 안내</a></li>
+                        <li><a href="#">온라인 전시관</a></li>
+                        <li><a href="#">추천 코스</a></li>
+                        <li><a href="#">미래기술관</a></li>
+                        <li><a href="#">과학기술관</a></li>
+                        <li><a href="#">꿈아띠 체험관</a></li>
+                        <li><a href="#">인류관</a></li>
+                        <li><a href="#">자연사관</a></li>
+                        <li><a href="#">창의나래관</a></li>
+                        <li><a href="#">생물탐구관</a></li>
+                        <li><a href="#">천체관</a></li>
+                        <li><a href="#">야외 전시장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">특별전ㆍ행사</a>
+                    <ul class="submenu">
+                        <li><a href="#">사이언스 데이</a></li>
+                        <li><a href="#">수학 체험전</a></li>
+                        <li><a href="#">전국학생과학발명품경진대회</a></li>
+                        <li><a href="#">전국과학전람회</a></li>
+                        <li><a href="#">특별전시회</a></li>
+                        <li><a href="#">과학문화공연</a></li>
+                        <li><a href="#">국제과학관심포지엄</a></li>
+                        <li><a href="#">전시품개발센터 쇼룸</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">교육</a>
+                    <ul class="submenu">
+                        <li><a href="#">교육프로그램안내</a></li>
+                        <li><a href="#">교육 시설</a></li>
+                        <li><a href="#">과학공방</a></li>
+                        <li><a href="#">교육 자료실</a></li>
+                        <li><a href="#">외부 과학교육 프로그램</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">과학관 소개</a>
+                    <ul class="submenu">
+                        <li><a href="#">관람 안내</a></li>
+                        <li><a href="#">기관 안내</a></li>
+                        <li><a href="#">편의ㆍ식음ㆍ시설 안내</a></li>
+                        <li><a href="#">기증ㆍ기탁 및 소장품 공유안내</a></li>
+                        <li><a href="#">국가중요과학기술자료</a></li>
+                        <li><a href="#">주변 정보</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">관련 사이트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">소통마당</a>
+                    <ul class="submenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">채용 정보</a></li>
+                        <li><a href="#">사업 공고 및 평가 결과</a></li>
+                        <li><a href="#">고객 서비스</a></li>
+                        <li><a href="#">안전관리방</a></li>
+                        <li><a href="#">홍보 자료</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">110 수화(화상)ㆍ채팅 상담</a></li>
+                        <li><a href="#">국민 신문고</a></li>
+                        <li><a href="#">국만 생각함</a></li>
+                        <li><a href="#">소극행정 신고함</a></li>
+                        <li><a href="#">정보공개</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">자원봉사자 안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">예약ㆍ회원가입</a>
+                    <ul class="submenu">
+                        <li><a href="#">전시관 예약</a></li>
+                        <li><a href="#">교육예약</a></li>
+                        <li><a href="#">공연행사예약</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </li>
+
+
+                <button class="search"></button>
+                <button class="allmenu-open">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </button>
+            </ul>
+
+
+        </nav>
+
+        <!--         메뉴 끝 -->
+
+        <!--         바디 -->
+
+        <div id="body">
+
+            <!--              con1 -->
+            <div class="mcon1 con" id="mcon1">
+                <div class="inner">
+                    <div class="main_left">
+                        <div class="bbs" id="bbs">
+                            <ul>
+                                <li class="list1 on">
+                                    <h2>
+                                        <a href="#">
+                                            공지사항
+                                        </a>
+                                    </h2>
+                                    <ul>
+                                        <li class="first">
+                                            <a href="#">
+                                                <strong class="tit">
+                                                    2021 온라인 수학체험전 우수콘텐츠
+                                                </strong>
+                                                <em>
+                                                    2021 온라인 수학체험전 우수콘텐츠(학교 동아리) 선정결과 안내 20...
+                                                </em>
+                                                <span class="date_w">
+                                                    2021.05
+                                                    <strong>31</strong>
+                                                </span>
+                                                <span class="date">2021-05-31</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong class="tit">
+                                                    2021년 과메기전 참여 창작자 모집(각자도생 일상무기 만들기)
+                                                </strong>
+                                                <span class="date">2021-05-27</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong class="tit">
+                                                    국입중앙과학관 유료회원 가입 일시 중지안내
+                                                </strong>
+                                                <span class="date">2021-05-26</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="more"></a>
+                                </li>
+                                <li class="list2">
+                                    <h2>
+                                        <a href="#">보도자료</a>
+                                    </h2>
+                                    <ul>
+                                        <li class="first">
+                                            <a href="#">
+                                                <strong class="tit">
+                                                    국립중앙과학관, 국민참여형 공모전 「기
+                                                </strong>
+                                                <em>
+                                                    국립중앙과학관, 국민참여형 공모전 「기초과학콘텐츠(물리편) 콘테스트」개최...
+                                                </em>
+                                                <strong class="date_w">
+                                                    2021.05
+                                                    <strong>31</strong>
+                                                </strong>
+                                                <span class="date">2021-05-31</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong class="tit">
+                                                    수요자가 직접 발견하는 과학관 팬 상품(굿즈) 아이디어! 국민디자인단 발족식 성효
+                                                </strong>
+                                                <span class="date">2021-05-31</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong class="tit">
+                                                    국립중앙과학관, 개기월식 온라인 관측 행사 개최
+                                                </strong>
+                                                <span class="date">2021-05-24</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="more"></a>
+                                </li>
+                                <li class="list3">
+                                    <h2>
+                                        <a href="#">채용정보</a>
+                                    </h2>
+                                    <ul>
+                                        <li class="first">
+                                            <a href="#">
+                                                <strong class="tit">
+                                                    2021년도 제1회 국립중앙과학관 연
+                                                </strong>
+                                                <em>
+                                                    국입중앙과학관 공고 제2021 - 19호 2020년도 제1회 국립중앙과...
+                                                </em>
+                                                <strong class="date_w">
+                                                    2021.06
+                                                    <strong>08</strong>
+                                                </strong>
+                                                <span class="date">2021-06-08</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong class="tit">
+                                                    국립중앙과학관 공무직 근로자 채용 서류전형 합격자 발표 및 면접전형 계획 공고
+                                                </strong>
+                                                <span class="date">2021-06-07</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong class="tit">
+                                                    전시관 기간제 근로자 채용공고
+                                                </strong>
+                                                <span class="date">2021-05-21</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="more"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lookup">
+                            <ul>
+                                <li>
+                                    <a href="#">통합예약누리집 로그인</a>
+                                </li>
+                                <li>
+                                    <a href="#">국립중앙과학관 온-Line</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="smart">
+                            <ul>
+                                <li class="link1">
+                                    <a href="#">과학관 TV</a>
+                                </li>
+                                <li class="link2">
+                                    <a href="#">온라인 전시관</a>
+                                </li>
+                                <li class="link3">
+                                    <a href="#">통합 예약</a>
+                                </li>
+                                <li class="link4">
+                                    <a href="#">전시관 안내</a>
+                                </li>
+                                <li class="link5">
+                                    <a href="#">편의시설 안내</a>
+                                </li>
+                                <li class="link6">
+                                    <a href="#">자주묻는 질문</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main_right">
+
+                        <div class="swiper-container mySwiper01">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/slide01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/slide02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/slide03.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/slide04.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/slide05.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/slide06.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/slide07.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/slide08.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/slide09.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--             con1 끝-->
+
+            <!--              con2 -->
+            <div class="mcon2 con" id="mcon2">
+                <div class="inner">
+                    <div class="hgroup">
+                        <h2>추천코스</h2>
+                        <p>국립중앙과학관의 유형별 추천코스를 안내해드립니다.</p>
+                    </div>
+                    <ul>
+                        <li class="link1">
+                            <a href="#">
+                                <span>유치원</span>
+                            </a>
+                        </li>
+                        <li class="link2">
+                            <a href="#">
+                                <span>초등</span>
+                            </a>
+                        </li>
+                        <li class="link3">
+                            <a href="#">
+                                <span>중/고등</span>
+                            </a>
+                        </li>
+                        <li class="link4">
+                            <a href="#">
+                                <span>성인</span>
+                            </a>
+                        </li>
+                        <li class="link5">
+                            <a href="#">
+                                <span>모든연령</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--              con2 끝 -->
+
+            <!--              con3 -->
+            <div class="mcon3 con" id="mcon3">
+                <div class="hgroup">
+                    <h2>전시관 안내</h2>
+                </div>
+                <div class="card">
+                    <div class="swiper-container mySwiper02">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <span>
+                                    창의나래관
+                                </span>
+                                <a href="#" class="slider01"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span>
+                                    자기부상열차
+                                </span>
+                                <a href="#" class="slider02"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span>
+                                    천체관
+                                </span>
+                                <a href="#" class="slider03"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span>
+                                    야외전시장
+                                </span>
+                                <a href="#" class="slider04"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span>
+                                    생물탐구관
+                                </span>
+                                <a href="#" class="slider05"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span>
+                                    미래기술관
+                                </span>
+                                <a href="#" class="slider06"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span>
+                                    과학기술관
+                                </span>
+                                <a href="#" class="slider07"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span>
+                                    꿈아띠 체험관
+                                </span>
+                                <a href="#" class="slider08"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span>
+                                    인류관
+                                </span>
+                                <a href="#" class="slider09"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span>
+                                    자연사관
+                                </span>
+                                <a href="#" class="slider10"></a>
+                            </div>
+                        </div>
+                        <div class="button-next"></div>
+                        <div class="button-prev"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!--              con3 끝 -->
+            <!--              con4 -->
+            <div class="mcon4 con" id="mcon4">
+                <div class="inner">
+
+                    <div class="hgroup">
+                        <h2>교육프로그램 안내</h2>
+                        <p>국립중앙과학관은 개인, 학교 및 단체를 대상으로 맞춤형 교육콘텐츠를 제공합니다.</p>
+                    </div>
+                    <div>
+                        <ul class="tab">
+                            <li class="on">
+                                <a href="#">개인교육</a>
+                            </li>
+                            <li>
+                                <a href="#">단체교육</a>
+                            </li>
+                        </ul>
+                        <h2 class="skip" id="personaledu">개인교육</h2>
+                    </div>
+
+                    <div id="edu_group" class="edu_group_wrap">
+
+                        <ul class="edu_slide slick-initialized slick-slider">
+
+                            <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">
+                                "Previous"
+                            </button>
+
+                            <div class="slick-list draggable" style="padding: 0px;">
+
+                                <div class="slick-track" style="opacity: 1; width: 5124px; transform: translate3d(-1281px, 0px ,0px);">
+
+                                    <li class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 427px;">
+
+                                        <div class="deu_in g_item01">
+
+                                            <div class="edu_thm" tabindex="-1"></div>
+
+                                            <div class="edu_per">
+
+                                                <span class="one">
+
+                                                    <em class="skip">
+                                                        단체
+                                                    </em>
+
+                                                </span>
+
+                                            </div>
+
+                                            <em class="edu_class">과학교육</em>
+
+                                            <p class="tt">새싹과학교실</p>
+
+                                            <ul class="edu_con">
+
+                                                <li>
+                                                    <span>기간</span>
+                                                    "(1학기)3월~6월"
+                                                    <br>
+                                                    "(2학기)8월~12월"
+                                                </li>
+
+                                                <li>
+                                                    <span>대상</span>
+                                                    "7세 유치원 단체(20인 이상)"
+                                                </li>
+
+                                                <li>
+                                                    <span>시간</span>
+                                                    "매주 화~금 10시, 11시 중 선택"
+                                                </li>
+
+                                                <li>
+                                                    <span>비용</span>
+                                                    "유료"
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="btn_box">
+
+                                                <a href="#" class="btn" tabindex="-1">
+
+                                                    <span>상세보기</span>
+
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 427px;">
+
+                                        <div class="deu_in g_item02">
+
+                                            <div class="edu_thm" tabindex="-1"></div>
+
+                                            <div class="edu_per">
+
+                                                <span class="one">
+
+                                                    <em class="skip">
+                                                        단체
+                                                    </em>
+
+                                                </span>
+
+                                            </div>
+
+                                            <em class="edu_class">과학교육</em>
+
+                                            <p class="tt">주중 과학교실</p>
+
+                                            <ul class="edu_con">
+
+                                                <li>
+                                                    <span>기간</span>
+                                                    "(1학기)3월~7월"
+                                                    <br>
+                                                    "(2학기)8월~12월"
+                                                </li>
+
+                                                <li>
+                                                    <span>대상</span>
+                                                    "초ㆍ중ㆍ고등학생 단체(20인 이상)"
+                                                </li>
+
+                                                <li>
+                                                    <span>시간</span>
+                                                    "초등학생 60분, 중ㆍ고등학생 90분"
+                                                </li>
+
+                                                <li>
+                                                    <span>비용</span>
+                                                    "유료"
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="btn_box">
+
+                                                <a href="#" class="btn" tabindex="-1">
+
+                                                    <span>상세보기</span>
+
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 427px;">
+
+                                        <div class="deu_in g_item03">
+
+                                            <div class="edu_thm" tabindex="-1"></div>
+
+                                            <div class="edu_per">
+
+                                                <span class="one">
+
+                                                    <em class="skip">
+                                                        단체
+                                                    </em>
+
+                                                </span>
+
+                                            </div>
+
+                                            <em class="edu_class">과학교육</em>
+
+                                            <p class="tt">학교 밖 동아리 지원 프로그램</p>
+
+                                            <ul class="edu_con">
+
+                                                <li>
+                                                    <span>기간</span>
+                                                    "5월~12월(8월 여름방학 제외)"
+                                                </li>
+
+                                                <li>
+                                                    <span>대상</span>
+                                                    "초ㆍ중ㆍ고"
+                                                </li>
+
+                                                <li>
+                                                    <span>시간</span>
+                                                    "13:30~15:30"
+                                                </li>
+
+                                                <li>
+                                                    <span>비용</span>
+                                                    "무료"
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="btn_box">
+
+                                                <a href="#" class="btn" tabindex="-1">
+
+                                                    <span>상세보기</span>
+
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="slick-slide slick-cloned slick-active" data-slick-index="-1" aria-hidden="false" tabindex="-1" style="width: 427px;">
+
+
+                                        <div class="deu_in g_item04">
+
+                                            <div class="edu_thm" tabindex="-1"></div>
+
+                                            <div class="edu_per">
+
+                                                <span class="one">
+
+                                                    <em class="skip">
+                                                        단체
+                                                    </em>
+
+                                                </span>
+
+                                            </div>
+
+                                            <em class="edu_class">진로체험</em>
+
+                                            <p class="tt">진로교육</p>
+
+                                            <ul class="edu_con">
+
+
+                                                <li>
+                                                    <span>대상</span>
+                                                    "중학교(진로체험)중ㆍ고등학생(진로특강)"
+                                                </li>
+
+                                                <li>
+                                                    <span>기간</span>
+                                                    "4월~12월(8월 여름방학제외)"
+                                                </li>
+
+                                                <li>
+                                                    <span>장소</span>
+                                                    "국립중앙과학관 과학교육관"
+                                                </li>
+
+                                                <li>
+                                                    <span>접수일시</span>
+                                                    "3월 9일(화)~연중접수"
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="btn_box">
+
+                                                <a href="#" class="btn" tabindex="-1">
+
+                                                    <span>상세보기</span>
+
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="slick-slide slick-cloned slick-active slick-center" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 427px;">
+
+                                        <div class="deu_in g_item05">
+
+                                            <div class="edu_thm" tabindex="-1"></div>
+
+                                            <div class="edu_per">
+
+                                                <span class="one">
+
+                                                    <em class="skip">
+                                                        개인
+                                                    </em>
+
+                                                </span>
+
+                                            </div>
+
+                                            <em class="edu_class">과학교육</em>
+
+                                            <p class="tt">책에서 찾는 과학향기</p>
+
+                                            <ul class="edu_con">
+
+                                                <li>
+                                                    <span>기간</span>
+                                                    "상반기(4월), 하반기(10월)"
+                                                </li>
+
+                                                <li>
+                                                    <span>대상</span>
+                                                    "일반인(가족 단위 참가 가능))"
+                                                </li>
+
+                                                <li>
+                                                    <span>수강인원</span>
+                                                    "80명"
+                                                </li>
+
+                                                <li>
+                                                    <span>비용</span>
+                                                    "무료"
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="btn_box">
+
+                                                <a href="#" class="btn" tabindex="-1">
+
+                                                    <span>상세보기</span>
+
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 427px;">
+
+                                        <div class="deu_in g_item06">
+
+                                            <div class="edu_thm" tabindex="-1"></div>
+
+                                            <div class="edu_per">
+
+                                                <span class="one">
+
+                                                    <em class="skip">
+                                                        개인
+                                                    </em>
+
+                                                </span>
+
+                                            </div>
+
+                                            <em class="edu_class">과학캠프</em>
+
+                                            <p class="tt">방학과학캠프</p>
+
+                                            <ul class="edu_con">
+
+                                                <li>
+                                                    <span>기간</span>
+                                                    "겨울방학(1월), 여름방학(7~8월)"
+                                                </li>
+
+                                                <li>
+                                                    <span>대상</span>
+                                                    "초등4학년~중등2학년"
+                                                </li>
+
+                                                <li>
+                                                    <span>캠프기간</span>
+                                                    "2박 3일씩 6기수 진행"
+                                                </li>
+
+                                                <li>
+                                                    <span>비용</span>
+                                                    "유료"
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="btn_box">
+
+                                                <a href="#" class="btn" tabindex="-1">
+
+                                                    <span>상세보기</span>
+
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                </div>
+                            </div>
+                            <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">
+                                "Next"
+                            </button>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--              con4 끝 -->
+
+            <!--              con5 -->
+            <div class="mcon5 con" id="mcon5">
+
+                <div class="inner">
+
+                    <div class="main_left">
+
+                        <div class="preview">
+
+                            <h2>관람시간 안내</h2>
+
+                            <div>
+
+                                <ul class="pre_con">
+
+                                    <li>
+                                        <span>관람시간</span>
+                                        오전 9:30 ~ 오후 17:50 (매표마감 17:00)
+                                    </li>
+                                    <li>
+                                        <span>휴관일</span>
+                                        매주 월요일, 매년 명절(1월 1일, 설날, 추석)당일
+                                    </li>
+                                    <li>
+                                        <span>종합안내센터</span>
+                                        ARS 042-601-7979
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="assi">
+                            <a href="#" class="think">
+                                <h2>
+                                    국민
+                                    <br>
+                                    생각함
+                                </h2>
+                            </a>
+                            <a href="#" class="guide">
+                                <h2>
+                                    시설대관
+                                    <br>
+                                    안내
+                                </h2>
+                            </a>
+                            <a href="#" class="tour">
+                                <h2>
+                                    주변
+                                    <br>
+                                    관광정보
+                                </h2>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="main_right">
+
+                        <div class="notice">
+
+                            <h2>알림판</h2>
+                            <div class="control">
+                                <a href="#" id="nt_p_prev" class="prev"></a>
+                                <a href="#" id="nt_p_stop" class="stop"></a>
+                                <a href="#" id="nt_p_next" class="next"></a>
+                            </div>
+                            <div class="slide">
+                                <div class="slider">
+                                    <p><img src="img/slide1.jpg" alt=""></p>
+                                    <p><img src="img/slide2.jpg" alt=""></p>
+                                    <p><img src="img/slide3.jpg" alt=""></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="webzine">
+                            <h2>WEBZINE</h2>
+                            <span>혜택과 소식이 가득한 국립중앙과학관 웹진을 받아보세요.</span>
+                            <a href="#" class="detail">자세히보기</a>
+                            <div>
+                                <label for="emailParam" class="skip">이메일을 입력해주세요</label>
+                                <input type="text" id="emailParam" name="emailParam" placeholder="이메일을 입력해주세요" title="웹진 받을 이메일 입력하기">
+                                <button class="like" id="webzineBtn" title="새창열림">
+                                    구독신청
+                                </button>
+                                <button class="like" id="webzineCancelBtn">구독취소</button>
+                                <input type="hidden" id="agreeFlag" name="agreeFlag">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--              con5 끝 -->
+
+            <!--              con6 -->
+            <div class="mcon6 con" id="mcon6">
+                <div class="inner">
+                    <div class="hgroup">
+                        <h2>SNS</h2>
+                        <p>국립중앙과학관의 소식을 빠르게 전합니다.</p>
+                    </div>
+                    <ul class="sns_ico">
+                        <li>
+                            <a href="#" class="instar">
+                                <span class="skip">인스타그램 소식 바로가기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="youtube">
+                                <span class="skip">유튜브 소식 바로가기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="facebook">
+                                <span class="skip">페이스북 소식 바로가기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="blog">
+                                <span class="skip">네이버 블로그 소식 바로가기</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sns_wrap">
+                        <ul class="sns_list grid" id="colimns"></ul>
+                        <a href="#" class="sns_more">
+                            <span>더보기</span>
+                        </a>
+                        <input type="hidden" id="snsType" value="insta">
+                    </div>
+                </div>
+            </div>
+            <!--              con6 끝 -->
+
+            <!--         퀵메뉴 -->
+            <div class="side_quick qmore">
+                <ul class="blind">
+                    <li class="tt">
+                        QUICK MENU
+                        <i>&nbsp;</i>
+                    </li>
+                    <li class="sq1">
+                        <a href="#mcon1">메인</a>
+                    </li>
+                    <li class="sq2">
+                        <a href="#mcon3">전시관</a>
+                    </li>
+                    <li class="sq3">
+                        <a href="#mcon4">교육</a>
+                    </li>
+                    <li class="sq4">
+                        <a href="#mcon5">안내</a>
+                    </li>
+                    <li class="sq5">
+                        <a href="#mcon6">SNS</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="side_quick_top">
+                <a href="#">TOP ▲</a>
+            </p>
+            <!--         퀵메뉴 끝 -->
+
+        </div>
+
+        <!--         바디 끝 -->
+
+
+        <hr>
+
+        <!--    푸터 -->
+
+        <footer id="footer">
+
+            <div class="container">
+               
+                <div class="site-info">
+                   
+                    <span class="flogo">
+                        <img src="https://www.science.go.kr/resources/images/mps/layout/flogo.png" alt="국립중앙과학관">
+                    </span>
+                    
+                </div>
+                
+                <div class="select-link">
+
+                    <strong class="link-title">
+
+                        <a href="#">
+                           관계기관
+                            <i class="xi-long-arrow-up"></i>
+
+                        </a>
+
+                    </strong>
+
+                    <ul class="link-site">
+
+                        <li><a href="#">과학기술정보통신부</a></li>
+                        <li><a href="#">국립과천과학관</a></li>
+                        <li><a href="#">국립부산과학관</a></li>
+                        <li><a href="#">국립대구과학관</a></li>
+                        <li><a href="#">국립광주과학관</a></li>
+                        <li><a href="#">한국과학관협회</a></li>
+                        <li><a href="#">한국과학창의재단</a></li>
+                        <li><a href="#">국민재난안전포털</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="fmenu-select container">
+
+                    <ul class="fsidemenu">
+
+                        <li><a href="#" class="point">개인정보처리방침</a></li>
+                        <li><a href="#">오시는길</a></li>
+                        <li><a href="#">저작권 정책</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="float-wrap">
+                    <address class="address">
+                        34143 대전광역시 유성구 대덕대로 481 (구성동32-2) 국립중앙과학관 ARS 042-601-7979
+                    </address>
+                </div>
+
+                <p class="copyright">Copyright 2018 National Science Museum All Right Reserved.</p>
+
+                <p class="quote-mark">
+                    <span class="wa">
+                        <img src="https://www.science.go.kr/resources/images/mps/layout/footer_opennuri.gif" alt="공공누리 공공저작물">
+                        <img src="https://www.science.go.kr/resources/images/mps/layout/wa_mark.png" alt="과학기술정보통신부">
+                    </span>
+                </p>
+
+            </div>
+
+        </footer>
+
+        <!--    푸터 끝 -->
 
     </div>
 
