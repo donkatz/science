@@ -72,8 +72,6 @@ h6 {
     height: 40px;
 }
 
-.top-service .container {}
-
 .top-service ul {
     display: flex;
     justify-content: center;
@@ -185,7 +183,6 @@ header {
     background: url(https://www.science.go.kr/resources/images/mps/layout/icon_sns.png) no-repeat 0 0;
 }
 
-.util .sidemenu .sns .facebook {}
 
 .util .sidemenu .sns .instagram {
     background-position: -25px 0;
@@ -266,11 +263,6 @@ header {
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
 }
-
-.sidemenu .lang ul li {}
-
-.sidemenu .lang ul li > a {}
-
 
 /* 사이드메뉴 끝 */
 
@@ -359,8 +351,6 @@ nav ul#gnb li .submenu li a {
 .menu ul#gnb li:hover > .menu-bg {
     display: block;
 }
-
-.menu > button {}
 
 .menu button:hover {
     cursor: pointer;
@@ -466,8 +456,6 @@ nav ul#gnb li .submenu li a {
     width: auto;
     box-sizing: border-box;
 }
-
-.main_left .bbs ul li h2 {}
 
 .main_left .bbs ul li.on h2 {
     text-decoration: none;
@@ -660,10 +648,6 @@ nav ul#gnb li .submenu li a {
     transition: all 1s;
 }
 
-.main_left .bbs ul li.list2 {}
-
-.main_left .bbs ul li.list3 {}
-
 .main_left .lookup {
     height: 55px;
 }
@@ -802,8 +786,6 @@ nav ul#gnb li .submenu li a {
     align-items: center;
 }
 
-.mcon1 .main_right .swiper-slide a {}
-
 .mcon1 .main_right .swiper-slide a img {
     display: block;
     margin: 0 auto;
@@ -813,10 +795,6 @@ nav ul#gnb li .submenu li a {
     object-fit: cover;
     overflow: hidden;
 }
-
-.mcon1 .swiper-button-next {}
-
-.mcon1 .swiper-button-prev {}
 
 .mcon1 .swiper-pagination {
     position: absolute;
@@ -859,8 +837,6 @@ nav ul#gnb li .submenu li a {
     margin-top: 5px;
     font-size: 18px;
 }
-
-.mcon2 .inner ul {}
 
 .mcon2 .inner ul li {
     position: relative;
@@ -1067,53 +1043,93 @@ nav ul#gnb li .submenu li a {
 
 
 .mcon3 .swiper-slide .slider01 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg8.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg8.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .swiper-slide .slider02 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg9.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg9.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .swiper-slide .slider03 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg1.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg1.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .swiper-slide .slider04 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg7.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg7.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .swiper-slide .slider05 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg10.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg10.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .swiper-slide .slider06 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg2.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg2.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .swiper-slide .slider07 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg3.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg3.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .swiper-slide .slider08 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg4.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg4.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .swiper-slide .slider09 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg5.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg5.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .swiper-slide .slider10 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/card_bg6.png);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/card_bg6.png);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 .mcon3 .mySwiper02 > .button-next {
@@ -1220,9 +1236,7 @@ height: 814px;
     margin-top: 5px;
     font-size: 18px;
 }
-}
 
-.mcon4 .inner .tab {}
 
 .mcon4 .tab > li {
     display: inline-block;
@@ -1248,7 +1262,6 @@ height: 814px;
     text-align: center;
 }
 
-.mcon4 .tab li.on {}
 
 .mcon4 .tab li.on > a {
     background: #003964;
@@ -1285,7 +1298,7 @@ height: 814px;
     width: 100%;
 }
 
-.slick-slider {
+.ed-slider {
     position: relative;
     display: block;
     box-sizing: border-box;
@@ -1346,7 +1359,7 @@ height: 814px;
     background: #fff;
 }
 
-.slick-list {
+.list {
     position: relative;
     display: block;
     margin: 0;
@@ -1354,50 +1367,66 @@ height: 814px;
     overflow: hidden;
 }
 
-.slick-slide  {
+.ed-slide  {
     box-sizing: border-box;
+    width: 400px;
+    height: 400px;
 }
 
-.mcon4 .edu_slide .slick-list {
+.mcon4 .edu_slide .list {
     width: 1280px;
 }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list {
+.ed-slider .track,
+.ed-slider .list {
     transform: translate3d(0, 0, 0);
 }
 
-.mcon4 .edu_slide .slick-list .slick-center > .g_item01 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg01.png) center center / cover no-repeat;
+.mcon4 .edu_slide .list > .g_item01 {
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg01.png) center center / cover no-repeat;
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
-.mcon4 .edu_slide .slick-list .slick-track .g_item02 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg02.png) center center / cover no-repeat;
+.mcon4 .edu_slide .list .g_item02 {
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg02.png) center center / cover no-repeat;
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
-.mcon4 .edu_slide .slick-list .slick-track .g_item03 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg03.png) center center / cover no-repeat;
+.mcon4 .edu_slide .list .g_item03 {
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg03.png) center center / cover no-repeat;
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
-.mcon4 .edu_slide .slick-list .slick-track .g_item04 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg04.png) center center / cover no-repeat;
+.mcon4 .edu_slide .list .g_item04 {
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg04.png) center center / cover no-repeat;
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
-.mcon4 .edu_slide .slick-list .slick-track .g_item05 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg05.png) center center / cover no-repeat;
+.mcon4 .edu_slide .list .g_item05 {
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg05.png) center center / cover no-repeat;
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
-.mcon4 .edu_slide .slick-list .slick-track .g_item06 {
-    background: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg06.png) center center / cover no-repeat;
+.mcon4 .edu_slide .list .g_item06 {
+    background-image: url(https://www.science.go.kr/resources/images/mps/main/edn_onbg06.png) center center / cover no-repeat;
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
 }
 
 
-.slick-track:after {
-    clear: both;
-}
-
-.slick-track:before,
-.slick-track:after {
+.track:before,
+.track:after {
     display: table;
     content: '';
 }
@@ -1469,19 +1498,6 @@ em {
     font-family: Square;
 }
 
-.mcon4 .edu_slide .edu_con {
-    display: none;
-}
-
-.mcon4 .edu_slide .edu_con li {
-    display: table;
-    vertical-align: top;
-    margin: 0 0 8px 0;
-    width: 100%;
-    height: auto;
-    text-align: left;
-}
-
 .mcon4 .edu_slide > li {
     position: relative;
     display: inline-block;
@@ -1490,12 +1506,6 @@ em {
     color: #fff;
     box-sizing: border-box;
     outline: none;
-}
-
-.mcon4 .edu_slide .edu_con span {
-    display: table-cell;
-    width: 80px;
-    font-weight: 600;
 }
 
 .mcon4 .edu_slide .btn_box a {
@@ -1574,7 +1584,6 @@ em {
     background: linear-gradient(to right, #1069aa, #0d3b69);
 }
 
-.mcon5 .preview div .pre_con {}
 
 .mcon5 .preview div .pre_con li {
     position: relative;
@@ -1667,8 +1676,6 @@ em {
     height: 300px;
 }
 
-.mcon5 .notice h2 {}
-
 .mcon5 .notice .control {
     z-index: 55;
     position: absolute;
@@ -1688,11 +1695,6 @@ em {
 .mcon5 .notice .control .prev {
     left: 0;
 }
-
-.mcon5 .notice .control .stop {}
-
-.mcon5 .notice .control .next {}
-
 
 .mcon5 .notice .control .prev:before {
     transform: rotate(45deg);
@@ -1768,8 +1770,6 @@ em {
     position: absolute;
 }
 
-.mcon5 .notice .slide > .slider p img {}
-
 .mcon5 .notice .slide > .slider p:first-child {
     left: 0;
 }
@@ -1810,10 +1810,6 @@ em {
     display: none;
 }
 
-.mcon5 .webzine div {}
-
-.mcon5 .webzine div label {}
-
 .skip {
     overflow: hidden;
     font-size: 0;
@@ -1837,7 +1833,6 @@ input[type="password"] {
     height: 40px;
     padding: 8px;
     -webkit-appearance: none;
-    -webkit-border-radius: 0;
 }
 
 .mcon5 .webzine button {
@@ -1878,8 +1873,6 @@ textarea {
     ;
     vertical-align: middle;
 }
-
-.mcon5 .webzine div #agreeFlag {}
 
 /* con5 끝 */
 
@@ -1953,7 +1946,6 @@ textarea {
     background: url(https://www.science.go.kr/resources/images/mps/main/sns_youtube.png) center center / contain no-repeat;
 }
 
-.mcon6 .sns_ico > li a.facebook {}
 
 .mcon6 .sns_ico > li a.blog {
     background: url(https://www.science.go.kr/resources/images/mps/main/sns_blog.png) center center / contain no-repeat;
@@ -2253,8 +2245,6 @@ strong {
     padding: 0 18px;
     line-height: 2.2;
 }
-
-#footer .container .select-link > .link-title a .xi-long-arrow-up {}
 
 #footer .container .select-link > .link-title a::after {
     display: block;
