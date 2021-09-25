@@ -771,22 +771,22 @@ nav ul#gnb li .submenu li a {
     display: block;
 }
 
-.main_right .mySwiper01 {
+.main_right .autoplay {
     height: 600px;
 }
 
-.mcon1 .main_right .swiper-container {
+.mcon1 .main_right .slick-container {
     width: 100%;
     height: 100%;
 }
 
-.mcon1 .main_right .swiper-slide {
+.mcon1 .main_right .slick-slide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.mcon1 .main_right .swiper-slide a img {
+.mcon1 .main_right .slick-slide a img {
     display: block;
     margin: 0 auto;
     padding: 0 auto;
@@ -796,12 +796,12 @@ nav ul#gnb li .submenu li a {
     overflow: hidden;
 }
 
-.mcon1 .swiper-pagination {
+.mcon1 .slick-pagination {
     position: absolute;
     top: 525px;
 }
 
-.mcon1 .swiper-pagination > span {
+.mcon1 .slick-pagination > span {
     width: 10px;
     height: 10px;
     border-radius: 0;
